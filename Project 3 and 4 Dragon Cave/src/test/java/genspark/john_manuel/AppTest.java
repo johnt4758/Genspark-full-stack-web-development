@@ -1,20 +1,23 @@
 package genspark.john_manuel;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.*;
 
-import org.junit.Test;
-
-/**
- * Unit test for simple App.
- */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
+    App dragonApp;
+
+    @BeforeEach
+    void setUp() {
+        dragonApp = new App();
+    }
+
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void main() {
+        assertEquals(false, dragonApp.dragonCave(), "running game");
+    }
+
+    @AfterEach
+    void tearDown(){
     }
 }
