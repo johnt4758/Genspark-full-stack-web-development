@@ -9,8 +9,5 @@
         <module name="Hangman" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Hangman" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
