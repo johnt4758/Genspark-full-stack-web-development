@@ -1,4 +1,4 @@
-package genspark.john_manuel.hangman;
+package genspark.john_manuel.hangman_app;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

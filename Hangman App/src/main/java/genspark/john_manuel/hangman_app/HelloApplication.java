@@ -1,4 +1,4 @@
-package genspark.john_manuel.hangman;
+package genspark.john_manuel.hangman_app;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
