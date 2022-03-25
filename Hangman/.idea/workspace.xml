@@ -5,37 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70d2d4f8-3fde-46ec-a38c-ae1298f019f5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_base_win_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_controls_win_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_fxml_win_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_openjfx_javafx_graphics_win_11_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hangman App/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Hangman App/src/main/java/genspark/john_manuel/hangman_app/HangmanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hangman App/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hangman App/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hangman App/src/main/java/genspark/john_manuel/hangman_app/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hangman App/src/main/java/genspark/john_manuel/hangman_app/HangmanApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hangman App/src/main/java/genspark/john_manuel/hangman_app/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hangman App/src/main/resources/genspark/john_manuel/hangman_app/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hangman App/src/main/resources/genspark/john_manuel/hangman_app/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hangman App/target/classes/genspark/john_manuel/hangman_app/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hangman App/target/classes/genspark/john_manuel/hangman_app/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hangman App/target/classes/genspark/john_manuel/hangman_app/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hangman App/target/classes/genspark/john_manuel/hangman_app/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hangman App/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Hangman App/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hangman App/tests/genspark/john_manuel/hangman_app/HelloApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Hangman App/tests/genspark/john_manuel/hangman_app/HangmanAppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hangman.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/genspark/john_manuel/hangman/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/genspark/john_manuel/hangman/HelloController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/genspark/john_manuel/hangman/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/genspark/john_manuel/hangman/HelloApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/genspark/john_manuel/hangman/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/genspark/john_manuel/hangman/hello-view.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Project 3 and 4 Guess My Number/src/test/java/genspark/John_Manuel/GuessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Project 3 and 4 Guess My Number/src/test/java/genspark/John_Manuel/GuessTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/source/AutoGeneratedWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/utils/RandomWord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/source/Hangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/Hangman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/source/HangmanDrawing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/utils/Drawing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/source/AutoGeneratedWordTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/source/HangmanTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/source/HangmanTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/source/AutoGeneratedWord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/source/Hangman.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/source/Hangman.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/source/HangmanDrawing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/source/AutoGeneratedWordTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/source/HangmanTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/source/HangmanTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +60,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="alwaysUpdateSnapshots" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -84,13 +84,18 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/source" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="C:/GenSpark/genspark-java-core/genspark-java-core" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="source.utils" />
       <recent name="source" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
@@ -103,7 +108,7 @@
       <command value="mvn compile 'com.github.dhiraj072:random-word-generator:1.1.0'" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HangmanTest.main">
+  <component name="RunManager" selected="Application.Hangman">
     <configuration name="Hangman" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="source.Hangman" />
       <module name="Hangman" />
@@ -111,7 +116,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AutoGeneratedWordTest.generateRandomWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HangmanTest.boardDrawingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hangman" />
       <extension name="coverage">
         <pattern>
@@ -120,14 +125,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="source" />
-      <option name="MAIN_CLASS_NAME" value="source.AutoGeneratedWordTest" />
-      <option name="METHOD_NAME" value="generateRandomWord" />
+      <option name="MAIN_CLASS_NAME" value="source.HangmanTest" />
+      <option name="METHOD_NAME" value="boardDrawingTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AutoGeneratedWordTest.getWordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HangmanTest.displayWordTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Hangman" />
       <extension name="coverage">
         <pattern>
@@ -136,8 +141,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="source" />
-      <option name="MAIN_CLASS_NAME" value="source.AutoGeneratedWordTest" />
-      <option name="METHOD_NAME" value="getWordTest" />
+      <option name="MAIN_CLASS_NAME" value="source.HangmanTest" />
+      <option name="METHOD_NAME" value="displayWordTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HangmanTest.drawHeadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hangman" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="source.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="source" />
+      <option name="MAIN_CLASS_NAME" value="source.HangmanTest" />
+      <option name="METHOD_NAME" value="drawHeadTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,7 +168,7 @@
       <module name="Hangman" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="source.*" />
+          <option name="PATTERN" value="source.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,10 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HangmanTest.main" />
-        <item itemvalue="JUnit.AutoGeneratedWordTest.getWordTest" />
         <item itemvalue="Application.Hangman" />
-        <item itemvalue="JUnit.AutoGeneratedWordTest.generateRandomWord" />
+        <item itemvalue="JUnit.HangmanTest.displayWordTest" />
+        <item itemvalue="JUnit.HangmanTest.boardDrawingTest" />
+        <item itemvalue="JUnit.HangmanTest.drawHeadTest" />
+        <item itemvalue="JUnit.HangmanTest.main" />
       </list>
     </recent_temporary>
   </component>
