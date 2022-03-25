@@ -14,7 +14,7 @@ class HangmanTest {
     }
 
     @Test
-    void displayWordTest(){
+    void randomWordGeneratorImportTest(){
         System.out.println(word.generateNewWord());
     }
 
@@ -27,6 +27,13 @@ class HangmanTest {
         draw.displayBoard(board);
         draw.updateMan(board);
         draw.displayBoard(board);
+    }
+
+    @Test
+    void winConditionTest(){
+        HangmanGame game = new HangmanGame();
+        game.newGame();
+        game.start();
     }
 
     @AfterEach

@@ -1,7 +1,5 @@
 package source.utils;
 
-import java.util.ArrayList;
-
 public class Drawing {
 
     public StringBuilder boardDrawing(){
@@ -15,7 +13,7 @@ public class Drawing {
         return board;
     }
 
-    public StringBuilder updateMan(StringBuilder builder){
+    public void updateMan( StringBuilder builder){
         //lots of if statements to check which part of body is already drawn
         if(builder.charAt(8) == ' '){
             builder.replace(8,9, "O");
@@ -29,7 +27,6 @@ public class Drawing {
         else if(builder.charAt(32) == ' '){
             builder.replace(32, 33, "^");
         }
-        return builder;
     }
 
     public void displayBoard(StringBuilder builder){
