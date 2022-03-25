@@ -16,6 +16,8 @@ public class HangmanGame {
 
     private String wordToGuess;
 
+    private boolean isDone;
+
     RandomWord generatedWord = new RandomWord();
     Drawing drawTool = new Drawing();
     StringBuilder board;
@@ -30,53 +32,65 @@ public class HangmanGame {
             Scanner userInput = new Scanner(System.in);
             //setting the number of guesses until game over inside the start method since it doesn't need to be referenced anywhere else
             int maxNumOfWrongGuesses = 4;
-            while(wrongGuesses < maxNumOfWrongGuesses){
-                //update the line containing the blank spaces here
-                System.out.println(randomWordBuilder());
+            while(!isDone){
+                while(wrongGuesses < maxNumOfWrongGuesses){
+                    //update the line containing the blank spaces here
+                    System.out.println(randomWordBuilder());
 
-                System.out.println("\nUsed letters: " + playerGuessedLetters);
+                    System.out.println("\nUsed letters: " + playerGuessedLetters);
 
-                System.out.println("\nEnter a Letter or 'quit' to stop: ");
+                    System.out.println("\nEnter a Letter or 'quit' to stop: ");
 
-                String playerGuess = userInput.nextLine();
+                    String playerGuess = userInput.nextLine();
 
-                //check if player types quit to exit the game early
-                if(playerGuess.equals("quit")){
-                    System.exit(0);
+                    //check if player types quit to exit the game early
+                    if(playerGuess.equals("quit")){
+                        System.exit(0);
+                    }
+                    //only use the first letter of what the player entered
+                    //if more than one letter entered, make a new sub string with just the first one
+                    else if(playerGuess.length() > 1){
+                        playerGuess = playerGuess.substring(0, 1);
+                    }
+                    //add the just guessed letter to player guesses array
+                    updateLettersInWord(playerGuess);
+
+                    if(wordFound()){
+                        System.out.println("\n" + wordToGuess);
+                        System.out.println("You win!");
+                        break;
+                    }
+                    else{
+                        drawTool.displayBoard(board);
+                    }
                 }
-                //only use the first letter of what the player entered
-                //if more than one letter entered, make a new sub string with just the first one
-                else if(playerGuess.length() > 1){
-                    playerGuess = playerGuess.substring(0, 1);
+                if(wrongGuesses == maxNumOfWrongGuesses){
+                    System.out.println("\nYou lost");
+                    System.out.println("the word to find was: " + wordToGuess);
                 }
-                //add the just guessed letter to player guesses array
-                updateLettersInWord(playerGuess);
-
-                if(wordFound()){
-                    System.out.println("\nYou win!");
+                System.out.println("Would you like to play again? (yes/no)");
+                String playerContinue = userInput.nextLine();
+                if(playerContinue.equals("yes")){
+                    newGame();
+                    start();
+                }
+                else if(playerContinue.equals("no")){
+                    isDone = true;
                     break;
                 }
-                else{
-                    drawTool.displayBoard(board);
-                }
-            }
-
-            if(wrongGuesses == maxNumOfWrongGuesses){
-                System.out.println("\nYou lost");
-                System.out.println("the word to find was: " + wordToGuess);
-                //added force exit on loss here because of the random word library
-                // im using doesn't close the http connection when generating word for some reason
-                System.exit(0);
             }
         }
         catch (Exception e){
             throw new NullPointerException("");
         }
-
+        //added force exit on loss here because of the random word library
+        // im using doesn't close the http connection when generating word for some reason
+        System.exit(0);
     }
 
     //call before start to ensure everything is set to 0
     public void newGame(){
+        isDone = false;
         wordToGuess = generatedWord.generateNewWord();
         wrongGuesses = 0;
         playerGuessedLetters.clear();
