@@ -1,13 +1,11 @@
 package genspark.john_manuel;
 
-import java.util.Scanner;
-
 public class Human extends Humanoid{
 
-    private int health = 20;
-    private int strength = 5;
-
     public Human(){
+        int health = 20;
+        int strength = 5;
+
         super.setHealth(health);
         super.setStrength(strength);
 
@@ -15,8 +13,7 @@ public class Human extends Humanoid{
     }
 
     public void startingPosition(){
-        super.setX_pos(0);
-        super.setY_pos(0);
+        super.setCurrentCords(0, 0);
     }
 
     @Override
