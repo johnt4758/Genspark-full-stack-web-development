@@ -19,6 +19,11 @@ public class Goblin extends Humanoid{
 
     public void startingPosition(){
         int randomInt = ranNum.nextInt(9) + 1;
+        //check if starting position of goblin would be any combination of 1
+        //changing it to 2 so there's no immediate combat for player
+        if(randomInt == 1){
+            randomInt++;
+        }
         super.setCurrentCords(randomInt, randomInt);
     }
 

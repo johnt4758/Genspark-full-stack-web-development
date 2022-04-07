@@ -2,6 +2,7 @@ package genspark.john_manuel;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Map;
 import java.util.Random;
 
 public class Land {
@@ -40,17 +41,21 @@ public class Land {
         }
     }
 
-    //called to place an object onto the board
+    //called to move the player on the board
     public void updateBoard(int new_x, int new_y, Human human){
-        //add the cords for the object to its list of places been
+        //add the cords for the human to its list of places been
         human.addCords(new_x, new_y);
 
-        //Loop through board to update objects place on it
+        //Loop through board to update humans place on it
         for(int x = 0; x < land.length; x++){
             for(int y = 0; y < land[x].length; y++){
+                checkPosition(x, y, human);
+                //before changing current position, replace the soon-to-be old cords with just a space
+                //indicating the player has been there already
                 if(human.getCurrentCords().containsKey(x) && human.getCurrentCords().containsValue(y)){
                     land[x][y] = " ";
                 }
+                //update current cords to newly inputted cords
                 if(x == new_x && y == new_y){
                     land[x][y] = human.toString();
                     human.setCurrentCords(x, y);
@@ -62,6 +67,7 @@ public class Land {
     public void startingBoard(Human human){
         for(int x = 0; x < land.length; x++){
             for(int y = 0; y < land[x].length; y++){
+                checkPosition(x, y, human);
                 if(human.getCurrentCords().containsKey(x) && human.getCurrentCords().containsValue(y)){
                     land[x][y] = human.toString();
                     human.addCords(x, y);
@@ -83,17 +89,30 @@ public class Land {
         }
     }
 
-    public void checkPosition(int row, int column){
-
+    public void checkPosition(int row, int column, Human human){
+        //check if human cords +/- 1 equals a goblin object
+        if(land[row][column].equals(human.toString())){
+            if(land[row+1][column].equals("*")){
+                System.out.println("nothing to the right");
+            }else if(land[row-1][column].equals("*")){
+                System.out.println("nothing to the left");
+            }
+            if(land[row][column+1].equals("*")){
+                System.out.println("nothing above");
+            }else if(land[row][column-1].equals("*")){
+                System.out.println("nothing below");
+            }
+        }
     }
 
     public void combat(Human human, Goblin goblin){
         int max = 10;
         int min = 1;
         int range = max - min + 1;
-        int whoHits = (int)(Math.random() * range) + min;
 
         while (goblin.getHealth() > 0 || human.getHealth() > 0){
+            int whoHits = (int)(Math.random() * range) + min;
+
             if(whoHits % 2 == 0){
                 goblin.setHealth(goblin.getHealth() - human.getStrength());
             }
