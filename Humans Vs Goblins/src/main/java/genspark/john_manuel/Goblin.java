@@ -28,9 +28,9 @@ public class Goblin extends Humanoid{
     }
 
     public String reveal(){
-        return "*";
+        return "ç";
     }
 
     @Override
-    public String toString(){return "ç";}
+    public String toString(){return "C";}
 }

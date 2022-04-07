@@ -3,7 +3,7 @@ package genspark.john_manuel;
 public class Human extends Humanoid{
 
     public Human(){
-        int health = 20;
+        int health = 40;
         int strength = 5;
 
         super.setHealth(health);

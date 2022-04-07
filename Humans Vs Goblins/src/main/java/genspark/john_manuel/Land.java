@@ -1,9 +1,6 @@
 package genspark.john_manuel;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 
 public class Land {
 
@@ -12,7 +9,7 @@ public class Land {
     private static final int WIDTH_X = 10;
 
     //2D array for ease of storing and reading board
-    private final String[][] land;
+    private final Object[][] land;
 
     //Random number for amount of goblins on board
     private final Random random = new Random();
@@ -21,16 +18,22 @@ public class Land {
     //List containing all the generated goblins
     private final ArrayList<Goblin> goblins = new ArrayList<>();
 
+    private Human human = new Human();
+
+    public boolean isAlive = true;
+
     //board constructor looping through rows and columns and placing * as the ground
     public Land(){
         generateGoblins();
 
-        land = new String[WIDTH_X][HEIGHT_Y];
+        land = new Object[WIDTH_X][HEIGHT_Y];
         for(int x = 0; x < land.length; x++){
             for(int y = 0; y < land[x].length; y++){
                 land[x][y] = "*";
             }
         }
+
+        startingBoard();
     }
 
     //creating random number of goblins to fight on the board
@@ -42,14 +45,13 @@ public class Land {
     }
 
     //called to move the player on the board
-    public void updateBoard(int new_x, int new_y, Human human){
+    public void updateBoard(int new_x, int new_y){
         //add the cords for the human to its list of places been
         human.addCords(new_x, new_y);
 
         //Loop through board to update humans place on it
         for(int x = 0; x < land.length; x++){
             for(int y = 0; y < land[x].length; y++){
-                checkPosition(x, y, human);
                 //before changing current position, replace the soon-to-be old cords with just a space
                 //indicating the player has been there already
                 if(human.getCurrentCords().containsKey(x) && human.getCurrentCords().containsValue(y)){
@@ -57,19 +59,19 @@ public class Land {
                 }
                 //update current cords to newly inputted cords
                 if(x == new_x && y == new_y){
-                    land[x][y] = human.toString();
+                    land[x][y] = human;
                     human.setCurrentCords(x, y);
                 }
             }
         }
+        checkPosition(new_x, new_y, human);
     }
 
-    public void startingBoard(Human human){
+    public void startingBoard(){
         for(int x = 0; x < land.length; x++){
             for(int y = 0; y < land[x].length; y++){
-                checkPosition(x, y, human);
                 if(human.getCurrentCords().containsKey(x) && human.getCurrentCords().containsValue(y)){
-                    land[x][y] = human.toString();
+                    land[x][y] = human;
                     human.addCords(x, y);
                     human.setCurrentCords(x, y);
                 }
@@ -78,7 +80,7 @@ public class Land {
                     //place goblin on starting board
                     for (Goblin goblin : goblins) {
                         if (goblin.getCurrentCords().containsKey(x) && goblin.getCurrentCords().containsValue(y)) {
-                            land[x][y] = goblin.toString();
+                            land[x][y] = goblin;
                         }
                     }
                 }
@@ -91,39 +93,63 @@ public class Land {
 
     public void checkPosition(int row, int column, Human human){
         //check if human cords +/- 1 equals a goblin object
-        if(land[row][column].equals(human.toString())){
-            if(land[row+1][column].equals("*")){
-                System.out.println("nothing to the right");
-            }else if(land[row-1][column].equals("*")){
-                System.out.println("nothing to the left");
-            }
-            if(land[row][column+1].equals("*")){
-                System.out.println("nothing above");
-            }else if(land[row][column-1].equals("*")){
-                System.out.println("nothing below");
+        if(land[row][column] instanceof Human){
+            System.out.println("found human");
+            try{
+                Object up = land[row-1][column];
+                Object down = land[row+1][column];
+                Object right = land[row][column+1];
+                Object left = land[row][column-1];
+
+                if(up instanceof Goblin){
+                    land[row-1][column] = ((Goblin) up).reveal();
+                    combat(human, (Goblin) (up));
+                }
+                if(down instanceof Goblin){
+                    land[row+1][column] = ((Goblin) down).reveal();
+                    combat(human, (Goblin) (down));
+                }
+                if(left instanceof Goblin){
+                    land[row][column-1] = ((Goblin) left).reveal();
+                    combat(human, (Goblin) (left));
+                }
+                if(right instanceof Goblin){
+                    land[row][column+1] = ((Goblin) right).reveal();
+                    combat(human, (Goblin) (right));
+                }
+            }catch (IndexOutOfBoundsException e){
+                System.out.println("null");
             }
         }
     }
 
-    public void combat(Human human, Goblin goblin){
+    public boolean combat(Human human, Goblin goblin){
         int max = 10;
         int min = 1;
         int range = max - min + 1;
 
-        while (goblin.getHealth() > 0 || human.getHealth() > 0){
+        System.out.println("Combat has started!");
+
+        isAlive = true;
+
+        while (isAlive){
             int whoHits = (int)(Math.random() * range) + min;
 
             if(whoHits % 2 == 0){
                 goblin.setHealth(goblin.getHealth() - human.getStrength());
+                if(goblin.getHealth() <= 0){
+                    break;
+                }
             }
             else {
                 human.setHealth(human.getHealth() - goblin.getStrength());
+                if(human.getHealth() <= 0){
+                    System.out.println("You have died");
+                    isAlive = false;
+                }
             }
         }
-        if(human.getHealth() <= 0){
-            System.out.println("You have died");
-            System.exit(0);
-        }
+        return isAlive;
     }
 
     @Override
