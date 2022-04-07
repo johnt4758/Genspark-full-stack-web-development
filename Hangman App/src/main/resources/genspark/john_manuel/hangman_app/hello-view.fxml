@@ -1,16 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="genspark.john_manuel.hangman_app.HelloController">
+<VBox alignment="CENTER" prefHeight="305.0" prefWidth="568.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="genspark.john_manuel.hangman_app.HangmanController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <HBox prefHeight="194.0" prefWidth="495.0">
+        <HBox prefHeight="170.0" prefWidth="186.0">
+            <VBox prefHeight="170.0" prefWidth="196.0">
+                <Label prefHeight="17.0" prefWidth="138.0" text="Guessed Letters:" />
+                <GridPane fx:id="guessedLettersGrid">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                </GridPane>
+            </VBox>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <VBox prefHeight="182.0" prefWidth="330.0">
+                <Canvas height="153.0" width="406.0" />
+                <Label fx:id="generatedWord" prefHeight="38.0" prefWidth="406.0" text="Generaetd word" />
+            </VBox>
+        </HBox>
+    </HBox>
+    <HBox prefHeight="19.0" prefWidth="495.0">
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="54.0" prefWidth="269.0">
+            <VBox prefHeight="200.0" prefWidth="100.0">
+                <Label prefHeight="17.0" prefWidth="103.0" text="enter your letter:" />
+                <TextArea fx:id="playerInput" prefHeight="37.0" prefWidth="165.0" />
+            </VBox>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" />
+    </HBox>
 </VBox>

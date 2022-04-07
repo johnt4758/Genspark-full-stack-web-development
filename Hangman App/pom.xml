@@ -75,7 +75,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                genspark.john_manuel.hangman_app/genspark.john_manuel.hangman_app.HelloApplication
+                                genspark.john_manuel.hangman_app/genspark.john_manuel.hangman_app.HangmanApp
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
