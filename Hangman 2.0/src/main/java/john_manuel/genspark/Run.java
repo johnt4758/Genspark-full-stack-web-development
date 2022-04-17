@@ -4,6 +4,8 @@ public class Run
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Hangman game = new Hangman();
+        game.newGame();
+        game.start();
     }
 }

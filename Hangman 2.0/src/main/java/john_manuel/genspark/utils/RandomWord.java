@@ -8,13 +8,11 @@ public class RandomWord {
     private String chosenWord;
 
     public RandomWord(){
-        if(chosenWord.isEmpty()){
-            setChosenWord();
-        }
+        chosenWord = RandomWordGenerator.getRandomWord();
     }
 
     public String getChosenWord(){return chosenWord;}
 
-    public void setChosenWord(){chosenWord = RandomWordGenerator.getRandomWord();}
+    public void setNewChosenWord(){chosenWord = RandomWordGenerator.getRandomWord();}
 
 }
