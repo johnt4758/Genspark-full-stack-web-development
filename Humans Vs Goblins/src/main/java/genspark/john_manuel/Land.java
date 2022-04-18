@@ -1,5 +1,8 @@
 package genspark.john_manuel;
 
+import genspark.john_manuel.entities.Goblin;
+import genspark.john_manuel.entities.Human;
+
 import java.util.*;
 
 public class Land {

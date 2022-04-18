@@ -1,8 +1,8 @@
-package genspark.john_manuel;
+package genspark.john_manuel.entities;
 
 import java.util.Random;
 
-public class Goblin extends Humanoid{
+public class Goblin extends Humanoid {
 
     //Using random to get random number for starting location of goblin
     private final Random ranNum = new Random();

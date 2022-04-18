@@ -1,6 +1,6 @@
-package genspark.john_manuel;
+package genspark.john_manuel.entities;
 
-public class Human extends Humanoid{
+public class Human extends Humanoid {
 
     public Human(){
         int health = 40;

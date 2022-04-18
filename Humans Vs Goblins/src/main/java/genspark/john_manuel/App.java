@@ -1,5 +1,6 @@
 package genspark.john_manuel;
 
+import javax.swing.*;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -7,26 +8,12 @@ public class App
 {
     public static void main( String[] args )
     {
-        Land land = new Land();
+        JFrame frame = new JFrame("Humans Vs Goblins");
+        frame.setContentPane(new GameGUI().panel1);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
 
-        start();
-
-        System.out.println(land);
-
-        try{
-            Scanner userInput = new Scanner(System.in);
-            while(land.isAlive){
-                String  input = userInput.next();
-                String[] nums = input.split(",");
-
-                land.updateBoard(Integer.parseInt(nums[0]), Integer.parseInt(nums[1]));
-
-                System.out.println("\n" + land);
-            }
-        }
-        catch (Exception e){
-            e.printStackTrace();
-        }
     }
 
     public static void start(){

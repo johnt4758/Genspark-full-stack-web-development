@@ -1,4 +1,4 @@
-package genspark.john_manuel;
+package genspark.john_manuel.entities;
 
 import java.util.Map;
 import java.util.TreeMap;
