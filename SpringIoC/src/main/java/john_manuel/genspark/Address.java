@@ -23,4 +23,12 @@ public class Address {
     public void setState(String state){this.state = state;}
     public void setCountry(String country){this.country = country;}
     public void setZipcode(String zipcode){this.zipcode = zipcode;}
+
+    @Override
+    public String toString(){
+        return "Address: " + city
+                + " " + state
+                + ", " + zipcode
+                + ", " + country;
+    }
 }

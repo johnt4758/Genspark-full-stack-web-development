@@ -11,4 +11,9 @@ public class Phone {
     public String getMob(){return mob;}
 
     public void setMob(String newMob){mob = newMob;}
+
+    @Override
+    public String toString(){
+        return "Phone: " + mob;
+    }
 }

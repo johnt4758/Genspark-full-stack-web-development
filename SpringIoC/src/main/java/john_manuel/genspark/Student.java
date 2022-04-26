@@ -25,4 +25,12 @@ public class Student {
     public void setName(String newName){name = newName;}
     public void setPh(List<Phone> newPh){ph = newPh;}
     public void setAdd(Address newAdd){add = newAdd;}
+
+    @Override
+    public String toString(){
+        return "Student: " + id
+                + " " + name
+                + " " + ph
+                + " " + add;
+    }
 }
