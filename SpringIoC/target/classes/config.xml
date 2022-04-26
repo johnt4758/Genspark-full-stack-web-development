@@ -22,6 +22,4 @@
         <constructor-arg index="2" value="USA"/>
         <constructor-arg index="3" value="85122"/>
     </bean>
-
-    <context:annotation-config />
 </beans>

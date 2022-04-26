@@ -1,4 +1,4 @@
-package java.john_manuel.genspark;
+package john_manuel.genspark;
 
 public class Address {
 
@@ -6,4 +6,21 @@ public class Address {
     private String state;
     private String country;
     private String zipcode;
+
+    public Address(String city, String state, String country, String zipcode){
+        this.city = city;
+        this.country = country;
+        this.state = state;
+        this.zipcode = zipcode;
+    }
+
+    public String getCity(){return city;}
+    public String getState(){return state;}
+    public String getCountry(){return country;}
+    public String getZipcode(){return zipcode;}
+
+    public void setCity(String city){this.city = city;}
+    public void setState(String state){this.state = state;}
+    public void setCountry(String country){this.country = country;}
+    public void setZipcode(String zipcode){this.zipcode = zipcode;}
 }

@@ -1,4 +1,4 @@
-package java.john_manuel.genspark;
+package john_manuel.genspark;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

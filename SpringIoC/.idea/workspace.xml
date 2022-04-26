@@ -5,27 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79dfdf6e-ff2e-4598-b007-bbe279f4f389" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Boarding_Pass_Tickets-main/Boarding_pass_tickets.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/john_manuel/genspark/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/john_manuel/genspark/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/john_manuel/genspark/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/john_manuel/genspark/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/john_manuel/genspark/HelloControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/.gitkeep" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hangman/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Hangman/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hangman/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Humans Vs Goblins/src/main/java/genspark/john_manuel/GameGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Humans Vs Goblins/src/main/java/genspark/john_manuel/GameGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/john_manuel/genspark/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/john_manuel/genspark/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/john_manuel/genspark/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/john_manuel/genspark/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/john_manuel/genspark/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/john_manuel/genspark/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/john_manuel/genspark/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/john_manuel/genspark/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/resources/config.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +54,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "exceleditor.install": "false",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="john_manuel.genspark.App" />
       <module name="SpringIoC" />
@@ -82,9 +72,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="java.john_manuel.genspark.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java.john_manuel.genspark.App" />
+      <module name="SpringIoC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java.john_manuel.genspark.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.java.john_manuel.genspark.App" />
       </list>
     </recent_temporary>
   </component>
