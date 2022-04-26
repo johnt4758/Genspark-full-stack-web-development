@@ -26,9 +26,12 @@ public class Address {
 
     @Override
     public String toString(){
-        return "Address: " + city
-                + " " + state
-                + ", " + zipcode
-                + ", " + country;
+        return "Address{" +
+                "city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", country='" + country + '\'' +
+                ", zipcode='" + zipcode + '\'' +
+                '}';
+
     }
 }

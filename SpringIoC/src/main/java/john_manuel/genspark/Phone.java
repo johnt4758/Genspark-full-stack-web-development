@@ -10,10 +10,13 @@ public class Phone {
 
     public String getMob(){return mob;}
 
-    public void setMob(String newMob){mob = newMob;}
+    public void setMob(String mob){this.mob = mob;}
 
     @Override
     public String toString(){
-        return "Phone: " + mob;
+        return "Phone{" +
+                "number='" + mob + '\'' +
+                '}';
+
     }
 }
