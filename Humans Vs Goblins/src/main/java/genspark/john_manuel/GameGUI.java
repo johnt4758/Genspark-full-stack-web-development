@@ -52,4 +52,33 @@ public class GameGUI {
             goblins.add(g, goblin);
         }
     }
+
+    public boolean combat(Human human, Goblin goblin){
+        int max = 10;
+        int min = 1;
+        int range = max - min + 1;
+
+        System.out.println("Combat has started!");
+
+        isAlive = true;
+
+        while (isAlive){
+            int whoHits = (int)(Math.random() * range) + min;
+
+            if(whoHits % 2 == 0){
+                goblin.setHealth(goblin.getHealth() - human.getStrength());
+                if(goblin.getHealth() <= 0){
+                    break;
+                }
+            }
+            else {
+                human.setHealth(human.getHealth() - goblin.getStrength());
+                if(human.getHealth() <= 0){
+                    System.out.println("You have died");
+                    isAlive = false;
+                }
+            }
+        }
+        return isAlive;
+    }
 }
