@@ -7,6 +7,8 @@ public class Address {
     private String country;
     private String zipcode;
 
+    public Address(){}
+
     public Address(String city, String state, String country, String zipcode){
         this.city = city;
         this.country = country;

@@ -6,20 +6,24 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
     <bean id="student" class="john_manuel.genspark.Student">
-        <constructor-arg index="0" value="0001"/>
-        <constructor-arg index="1" value="Jay"/>
-        <constructor-arg index="2" value="phone"/>
-        <constructor-arg index="3" value="address"/>
+        <constructor-arg name="id" value="0001"/>
+        <constructor-arg name="name" value="Jay"/>
+        <constructor-arg name="ph">
+            <list>
+                <ref bean="phone"/>
+            </list>
+        </constructor-arg>
+        <constructor-arg name="add" ref="address"/>
     </bean>
 
     <bean id="phone" class="john_manuel.genspark.Phone">
-        <constructor-arg index="0" value="9165552134"/>
+        <property name="mob" value="916-555-2134"/>
     </bean>
 
     <bean id="address" class="john_manuel.genspark.Address">
-        <constructor-arg index="0" value="Casa Grande"/>
-        <constructor-arg index="1" value="Arizona"/>
-        <constructor-arg index="2" value="USA"/>
-        <constructor-arg index="3" value="85122"/>
+        <property name="city" value="Casa Grande"/>
+        <property name="state" value="Arizona"/>
+        <property name="country" value="USA"/>
+        <property name="zipcode" value="85122"/>
     </bean>
 </beans>
