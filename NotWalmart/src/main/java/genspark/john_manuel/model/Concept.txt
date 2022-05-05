@@ -1,0 +1,4 @@
+Models or blueprints to be used everywhere else.
+
+CartModel - when instantiated, it's used to not only hold all relevant info about the
+contents of the cart but also format it for importing into the SQL table

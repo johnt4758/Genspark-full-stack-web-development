@@ -1,6 +1,6 @@
-package genspark.john_manuel.Products;
+package genspark.john_manuel.model;
 
-public class Book implements Product {
+public class Book extends Product {
 
     public String genre;
     public String author;
@@ -15,4 +15,9 @@ public class Book implements Product {
     public void setGenre( String genre ) {this.genre = genre;}
     public void setAuthor( String author ) {this.author = author;}
     public void setPublications( String publications ) {this.publications = publications;}
+    
+    @Override
+    public double getPrice(){
+        return 0;
+    }
 }

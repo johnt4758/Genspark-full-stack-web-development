@@ -1,6 +1,6 @@
-package genspark.john_manuel.Products;
+package genspark.john_manuel.model;
 
-public class Apparel implements Product{
+public class Apparel extends Product {
 
     public String type;
     public String brand;
@@ -15,4 +15,9 @@ public class Apparel implements Product{
     public void setType( String type ) {this.type = type;}
     public void setBrand( String brand ) {this.brand = brand;}
     public void setDesign( String design ) {this.design = design;}
+    
+    @Override
+    public double getPrice(){
+        return 0;
+    }
 }

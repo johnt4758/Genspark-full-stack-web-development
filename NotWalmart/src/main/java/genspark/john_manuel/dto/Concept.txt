@@ -1,0 +1,4 @@
+DTO or Data Transfer Objects is an object that carries data between processes.
+DTO lets us hide our entity from a client who is using that API and code maintenance becomes easier
+if we want to change our internal database structure.
+We only expose that part of the entity which the user should be able to edit.

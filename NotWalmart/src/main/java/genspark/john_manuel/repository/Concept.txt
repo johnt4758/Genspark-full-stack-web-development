@@ -1,0 +1,3 @@
+With Spring Boot, the Repository interface contains methods to fetch data
+from the table and/or database variant. That's what the CartRepository class
+is meant to do here
