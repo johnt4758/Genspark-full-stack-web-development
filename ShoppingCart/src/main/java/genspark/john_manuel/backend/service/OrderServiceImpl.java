@@ -15,7 +15,7 @@ import java.time.LocalDate;
 @Transactional
 public class OrderServiceImpl implements OrderService{
     
-    OrderRepository orderRepository;
+    private final OrderRepository orderRepository;
     
     @Autowired
     public OrderServiceImpl(OrderRepository orderRepository){
@@ -37,9 +37,4 @@ public class OrderServiceImpl implements OrderService{
     public void update(Order order){
         this.orderRepository.save(order);
     }
-    
-//    @PostMapping
-//    public ResponseEntity<Order> create(@RequestBody OrderForm form){
-//        List<OrderP>
-//    }
 }
