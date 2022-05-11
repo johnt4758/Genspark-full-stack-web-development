@@ -8,7 +8,7 @@ function App() {
       <header>
         <h1>React-Built Website Demo</h1>
       </header>
-      <Form/>
+      <Form></Form>
     </div>
   );
 }
