@@ -44,6 +44,13 @@ li {
 body.outer-container{
     padding: 1% 2% 1%;
 }
+
+ul.basic-list{
+    list-style-type: circle;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
   
 li.about{
     float: right;
