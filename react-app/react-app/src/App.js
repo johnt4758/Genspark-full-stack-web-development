@@ -1,4 +1,4 @@
-import Form from './Components/form';
+import CustomForm from './Components/FormClass';
 
 import './App.css';
 
@@ -8,7 +8,7 @@ function App() {
       <header>
         <h1>React-Built Website Demo</h1>
       </header>
-      <Form></Form>
+      <CustomForm></CustomForm>
     </div>
   );
 }
